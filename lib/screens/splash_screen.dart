@@ -29,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
             CircularProgressIndicator(
               color: Colors.black,
             ),
-            Text('Bull`s nrent',style: TextStyle(fontSize: 12,fontWeight: FontWeight.w800),),
+            Text('Nation wide Car rental app',style: TextStyle(fontSize: 12,color: Color.fromARGB(255, 53, 52, 52)),),
           ],
         ),
       )
