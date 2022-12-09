@@ -10,7 +10,9 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    Future.delayed(Duration(seconds: 3), () {});
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.of(context).pushNamed('/login');
+    });
     super.initState();
   }
 
@@ -22,14 +24,14 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            SizedBox(height: 30,),
+            const SizedBox(height: 30,),
             Image.network('https://purepng.com/public/uploads/large/purepng.com-yellow-lexus-lfa-carcarvehicletransportlexus-961524667139almse.png',scale: 5,),
-            SizedBox(height: 30,),
-            Text('Bull`s\nnrent',style: TextStyle(fontSize: 70,fontWeight: FontWeight.w800),),
-            CircularProgressIndicator(
+            const SizedBox(height: 30,),
+            const Text('Bull`s\nNrent',style: TextStyle(fontSize: 70,fontWeight: FontWeight.w800),),
+            const CircularProgressIndicator(
               color: Colors.black,
             ),
-            Text('Nation wide Car rental app',style: TextStyle(fontSize: 12,color: Color.fromARGB(255, 53, 52, 52)),),
+            const Text('Nation wide Car rental app',style: TextStyle(fontSize: 12,color: Color.fromARGB(255, 53, 52, 52)),),
           ],
         ),
       )
