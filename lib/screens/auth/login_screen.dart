@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/my_widgets.dart';
+import '../../widgets/my_widgets.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -86,7 +86,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             child: InkWell(
                 onTap: () {
-                  print('go');
+                  Navigator.pushNamed(context, '/Home');
                 },
                 child: const Center(
                     child: Text(

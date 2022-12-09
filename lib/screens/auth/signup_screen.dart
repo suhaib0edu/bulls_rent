@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/my_widgets.dart';
+import '../../widgets/my_widgets.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({Key? key}) : super(key: key);
@@ -87,7 +87,7 @@ class _SignupScreenState extends State<SignupScreen> {
             ),
             child: InkWell(
                 onTap: () {
-                  print('go');
+                  Navigator.pushNamed(context, '/Home');
                 },
                 child: const Center(
                     child: Text(
