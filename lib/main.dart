@@ -1,6 +1,7 @@
 import 'package:bulls_rent/screens/login_screen.dart';
 import 'package:flutter/material.dart';
 
+import 'screens/signup_screen.dart';
 import 'screens/splash_screen.dart';
 
 void main() {
@@ -15,8 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Bull`s rent',
       routes: {
-        '/SplashScreen': (context) => SplashScreen(),
+        '/Splash': (context) => const SplashScreen(),
         '/login': (context) => const LoginScreen(),
+        '/Signup': (context) => const SignupScreen(),
       },
       theme: ThemeData(
         primarySwatch: Colors.green,

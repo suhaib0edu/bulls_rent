@@ -109,7 +109,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   style: TextStyle(color: Colors.blueGrey, fontSize: 18),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.of(context).pushNamed('/Signup');
+                  },
                   child: const Text(
                     'SIGN UP',
                     style: TextStyle(color: Colors.blueGrey, fontSize: 18),
